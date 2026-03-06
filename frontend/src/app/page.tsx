@@ -1,6 +1,8 @@
 import Hero from "@/components/sections/Hero";
 import Plans from "@/components/sections/Plans";
+import AdvancedCalculators from "@/components/sections/AdvancedCalculators";
 import Calculators from "@/components/sections/Calculators";
+import FloatingLeadGen from "@/components/sections/FloatingLeadGen";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -54,6 +56,7 @@ export default function Home() {
       </section>
 
       <Plans />
+      <AdvancedCalculators />
       <Calculators />
 
       {/* Contact & Appointment Section */}
@@ -128,6 +131,7 @@ export default function Home() {
       </section>
 
       <Footer />
+      <FloatingLeadGen />
     </>
   );
 }

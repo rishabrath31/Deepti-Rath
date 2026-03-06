@@ -8,11 +8,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "#about" },
-    { name: "Plans", href: "#plans" },
-    { name: "Calculators", href: "#calculators" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Knowledge Hub", href: "/education/why-life-insurance" },
+    { name: "Comparison", href: "/education/comparison" },
+    { name: "Calculators", href: "/#advanced-calculators" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {

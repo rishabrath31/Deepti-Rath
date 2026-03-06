@@ -39,6 +39,7 @@ class BlogPost(Base):
     title = Column(String, nullable=False)
     slug = Column(String, unique=True, index=True)
     content = Column(Text, nullable=False)
+    category = Column(String, default="General")  # Insurance, Investment, Tax, etc.
     author_id = Column(Integer, ForeignKey("users.id"))
     published_at = Column(DateTime, default=datetime.utcnow)
     is_published = Column(Boolean, default=True)

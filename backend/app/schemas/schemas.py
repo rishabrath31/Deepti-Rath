@@ -68,6 +68,7 @@ class BlogPostBase(BaseModel):
     title: str
     slug: str
     content: str
+    category: Optional[str] = "General"
     is_published: Optional[bool] = True
 
 class BlogPostCreate(BlogPostBase):
