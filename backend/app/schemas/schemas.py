@@ -115,3 +115,55 @@ class Inquiry(InquiryBase):
 
     class Config:
         from_attributes = True
+# Policy Verification Schemas
+class ConsentUser(BaseModel):
+    idType: str
+    idNumber: str
+    mobile: str
+    email: EmailStr
+
+class ConsentPurpose(BaseModel):
+    description: str
+
+class ConsentData(BaseModel):
+    id: str
+
+class ConsentPermissionRange(BaseModel):
+    from_date: datetime
+    to_date: datetime
+
+class ConsentPermissionFrequency(BaseModel):
+    unit: str
+    value: int
+    repeats: int
+
+class ConsentPermission(BaseModel):
+    access: str
+    dateRange: ConsentPermissionRange
+    frequency: ConsentPermissionFrequency
+
+class ConsentDetail(BaseModel):
+    consentId: str
+    timestamp: datetime
+    dataConsumer: ConsentData
+    dataProvider: ConsentData
+    purpose: ConsentPurpose
+    user: ConsentUser
+    data: ConsentData
+    permission: ConsentPermission
+
+class ConsentArtifact(BaseModel):
+    consent: ConsentDetail
+    signature: dict
+
+class PolicyCertificateParameters(BaseModel):
+    PolDOB: str
+    PolicyNo: str
+    FullName: str
+    DOB: str
+
+class PolicyVerificationRequest(BaseModel):
+    txnId: str
+    format: str = "pdf"
+    certificateParameters: PolicyCertificateParameters
+    consentArtifact: ConsentArtifact

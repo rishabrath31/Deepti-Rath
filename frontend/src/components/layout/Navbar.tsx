@@ -10,6 +10,7 @@ const navLinks = [
     { name: "Home", href: "/" },
     { name: "Knowledge Hub", href: "/education/why-life-insurance" },
     { name: "Comparison", href: "/education/comparison" },
+    { name: "Verify Policy", href: "/tools/verify-policy" },
     { name: "Calculators", href: "/#advanced-calculators" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/#contact" },
