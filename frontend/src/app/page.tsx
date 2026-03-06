@@ -1,5 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import Plans from "@/components/sections/Plans";
+import ProductSpotlight from "@/components/sections/ProductSpotlight";
+import PurchaseProcess from "@/components/sections/PurchaseProcess";
 import AdvancedCalculators from "@/components/sections/AdvancedCalculators";
 import Calculators from "@/components/sections/Calculators";
 import FloatingLeadGen from "@/components/sections/FloatingLeadGen";
@@ -55,8 +57,10 @@ export default function Home() {
         </div>
       </section>
 
+      <ProductSpotlight />
       <Plans />
       <AdvancedCalculators />
+      <PurchaseProcess />
       <Calculators />
 
       {/* Contact & Appointment Section */}
