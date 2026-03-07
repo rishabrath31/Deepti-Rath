@@ -10,6 +10,7 @@ const calculatorOptions = [
     { id: "retirement", name: "Retirement Planning", icon: Milestone },
     { id: "education", name: "Child Education", icon: GraduationCap },
     { id: "growth", name: "Investment Growth", icon: Coins },
+    { id: "lic", name: "LIC Specifics", icon: Calculator },
 ];
 
 export default function AdvancedCalculators() {
@@ -69,7 +70,14 @@ export default function AdvancedCalculators() {
                         {calculatorOptions.map((opt) => (
                             <button
                                 key={opt.id}
-                                onClick={() => { setActiveTab(opt.id); setResult(null); }}
+                                onClick={() => {
+                                    if (opt.id === "lic") {
+                                        window.location.href = "/tools/lic-calculators";
+                                        return;
+                                    }
+                                    setActiveTab(opt.id);
+                                    setResult(null);
+                                }}
                                 className={cn(
                                     "w-full flex items-center gap-4 px-6 py-4 rounded-2xl font-bold transition-all text-left",
                                     activeTab === opt.id ? "bg-accent text-primary shadow-lg shadow-accent/20" : "text-white/60 hover:text-white hover:bg-white/5"

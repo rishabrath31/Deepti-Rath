@@ -42,7 +42,7 @@ export default function Navbar() {
                     </div>
                     <div className="flex flex-col">
                         <span className={cn("font-serif font-bold text-xl leading-none", scrolled ? "text-primary" : "text-primary")}>
-                            Rishab Rath
+                            Deepti Rath
                         </span>
                         <span className="text-[10px] uppercase tracking-widest text-accent font-semibold">
                             Financial Advisor

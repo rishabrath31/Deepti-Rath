@@ -83,11 +83,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                     </div>
                     <div className="flex items-center gap-4">
                         <div className="text-right">
-                            <p className="font-bold text-primary">Rishab Rath</p>
+                            <p className="font-bold text-primary">Deepti Rath</p>
                             <p className="text-xs text-muted-foreground">Senior LIC Consultant</p>
                         </div>
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary font-black">
-                            RR
+                            DR
                         </div>
                     </div>
                 </header>

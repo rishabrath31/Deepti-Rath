@@ -38,7 +38,7 @@ export default function Home() {
             </div>
             <div>
               <span className="text-accent font-bold uppercase tracking-widest text-sm mb-4 block">About Me</span>
-              <h2 className="text-4xl md:text-5xl font-serif text-primary mb-6">Meet Rishab Rath</h2>
+              <h2 className="text-4xl md:text-5xl font-serif text-primary mb-6">Meet Deepti Rath</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 Your financial journey is unique, and your insurance should be too. I specialize in crafting bespoke financial solutions that align with your life goals.
               </p>
@@ -89,7 +89,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-widest text-white/50 mb-1">WhatsApp Quick Contact</p>
-                    <p className="text-xl font-bold">+91 98765 43210</p>
+                    <p className="text-xl font-bold">+91 94376 85085</p>
                   </div>
                 </div>
                 <div className="flex gap-6 items-center">

@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, Dict
+from app.services import insurance_logic
 
 router = APIRouter()
 
@@ -68,4 +69,29 @@ def calculate_child_education(data: ChildEducationInput):
     return {
         "future_cost": round(future_cost, 2),
         "years_to_save": years_to_college
+    }
+
+class LICPlanInput(BaseModel):
+    plan_code: str
+    age: int
+    term: int
+    sum_assured: float
+    mode: str = "yearly"
+
+@router.post("/lic-plan")
+def calculate_lic_plan(data: LICPlanInput):
+    premium_details = insurance_logic.calculate_lic_premium(
+        data.plan_code, data.age, data.term, data.sum_assured, data.mode
+    )
+    maturity_details = insurance_logic.calculate_lic_maturity(
+        data.plan_code, data.term, data.sum_assured
+    )
+    
+    if not premium_details or not maturity_details:
+        raise HTTPException(status_code=404, detail="Plan logic not found or invalid inputs")
+        
+    return {
+        "plan_name": "LIC Plan " + data.plan_code,
+        "premium": premium_details,
+        "maturity": maturity_details
     }

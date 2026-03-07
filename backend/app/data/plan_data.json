@@ -1,0 +1,28 @@
+{
+    "914": {
+        "name": "New Endowment Plan",
+        "bonus_per_1000": 42,
+        "fab_rates": [
+            {"min_term": 15, "max_term": 20, "rate": 20},
+            {"min_term": 21, "max_term": 25, "rate": 40},
+            {"min_term": 26, "max_term": 35, "rate": 100}
+        ],
+        "base_premium_rates": {
+            "30": {"15": 68.20, "20": 49.30, "25": 38.50},
+            "35": {"15": 69.50, "20": 51.10, "25": 40.80}
+        }
+    },
+    "836": {
+        "name": "Jeevan Labh",
+        "bonus_per_1000": 47,
+        "fab_rates": [
+            {"min_term": 16, "max_term": 16, "rate": 20},
+            {"min_term": 21, "max_term": 21, "rate": 40},
+            {"min_term": 25, "max_term": 25, "rate": 100}
+        ],
+        "base_premium_rates": {
+            "30": {"16": 85.50, "21": 56.40, "25": 46.20},
+            "35": {"16": 87.20, "21": 58.60, "25": 48.80}
+        }
+    }
+}

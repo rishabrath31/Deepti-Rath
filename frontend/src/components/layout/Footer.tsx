@@ -13,7 +13,7 @@ export default function Footer() {
                             <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-primary text-2xl font-bold">
                                 LIC
                             </div>
-                            <span className="font-serif font-bold text-2xl">Rishab Rath</span>
+                            <span className="font-serif font-bold text-2xl">Deepti Rath</span>
                         </div>
                         <p className="text-white/60 leading-relaxed italic">
                             "Your trust is my greatest asset. Dedicated to securing your future with the gold standard of financial planning."
@@ -72,22 +72,22 @@ export default function Footer() {
                         <ul className="space-y-6">
                             <li className="flex gap-4 items-start">
                                 <Phone className="text-accent shrink-0" size={20} />
-                                <span className="text-white/70">+91 98765 43210</span>
+                                <span className="text-white/70">+91 94376 85085</span>
                             </li>
                             <li className="flex gap-4 items-start">
                                 <Mail className="text-accent shrink-0" size={20} />
-                                <span className="text-white/70">contact@rishabrath.com</span>
+                                <span className="text-white/70">rathdeepti68@gmail.com</span>
                             </li>
                             <li className="flex gap-4 items-start">
                                 <MapPin className="text-accent shrink-0" size={20} />
-                                <span className="text-white/70">123, Finance Plaza, Marine Drive, Mumbai, 400001</span>
+                                <span className="text-white/70">Chandrasekharpur, Bhubaneswar, 751016, Odisha</span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-white/40">
-                    <p>© 2026 Rishab Rath Financial Services. All rights reserved.</p>
+                    <p>© 2026 Deepti Rath Financial Services. All rights reserved.</p>
                     <div className="flex gap-8">
                         <Link href="#" className="hover:text-accent">Privacy Policy</Link>
                         <Link href="#" className="hover:text-accent">Terms of Service</Link>

@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Rishab Rath | Professional LIC Financial Advisor",
-  description: "Secure your future with trusted financial guidance from LIC Agent Rishab Rath. Insurance plans, retirement planning, and expert investment advice.",
+  title: "Deepti Rath | Professional LIC Financial Advisor",
+  description: "Secure your future with trusted financial guidance from LIC Agent Deepti Rath. Insurance plans, retirement planning, and expert investment advice.",
   keywords: ["LIC Advisor", "Financial Planning", "Life Insurance", "Retirement Plans", "Tax Saving"],
 };
 
